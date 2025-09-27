@@ -2,7 +2,7 @@ use bevy::prelude::*;
 use bevy::render::view::{self, VisibilityClass};
 
 #[rustfmt::skip]
-#[derive(Reflect, Component, Clone, Copy, Default)]
+#[derive(Reflect, Component, Clone, Copy, Default, Debug)]
 #[require(VisibilityClass)]
 #[component(on_add = view::add_visibility_class::<OmniLightSource2D>)]
 #[reflect(Component)]
